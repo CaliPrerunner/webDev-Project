@@ -1,0 +1,613 @@
+/* Credit w3schools - Team TBD homePage.css */
+html {
+    position: relative;
+    min-height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+    box-sizing: border-box;
+}
+.index{
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../database/background.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+.index a{
+    display: block;
+}
+
+.index .search-wrap{
+    float: left;
+    margin: 0 auto;
+}
+
+.index input[type=text]{
+    border: none;
+    border: 5px solid rgba(0,0,0,0.75);
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 5px #CCC;
+    padding: 10px;
+    margin: 10px;
+    font-size: 19px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit{
+    border-radius: 50%;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+}
+
+.navbarright{
+    float: right;
+    overflow: auto;
+}
+
+.navbarright a{
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 20px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    list-style: none;
+}
+
+.navbarright a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.navbarright a:hover::after{
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a{
+float: left;
+text-align: center;
+display: block;
+padding: 20px 15px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+list-style: none;
+}
+
+.navbar a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.active{
+    background-color: #ff0000;
+}
+
+
+@media screen and (max-width: 500px) {
+    .navbar a{
+        float: none;
+        display: block;
+    }
+}
+/* slideshow image code end*/
+body{
+    background: rgba(51, 170, 51, .4);
+    margin:0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10%;;
+    margin-bottom: 40%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Begin shopping cart*/
+.shopping-cart {
+    width: 750px;
+    height: 500px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item {
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+}
+
+.item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+}
+
+.buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+}
+
+.delete-btn,
+.like-btn {
+    display: inline-block;
+    Cursor: pointer;
+}
+
+.delete-btn {
+    width: 18px;
+    height: 17px;
+}
+
+.like-btn {
+    position: relative;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+}
+
+.is-active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+    0%   { background-position: left;  }
+    50%  { background-position: right; }
+    100% { background-position: right; }
+}
+
+.image {
+    margin-right: 50px;
+}
+
+.description {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 115px;
+}
+
+.description span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+}
+
+.description span:first-child {
+    margin-bottom: 5px;
+}
+.description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+}
+
+.quantity {
+    padding-top: 20px;
+    margin-right: 60px;
+}
+.quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+button[class*=btn] {
+
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+#sendbt{
+  width: 30px;
+  height: 30px;
+}
+.minus-btn img {
+    margin-bottom: 3px;
+}
+.plus-btn img {
+    margin-top: 2px;
+}
+
+button:focus,
+input:focus {
+    outline:0;
+}
+
+.total-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+@media (max-width: 800px) {
+    .shopping-cart {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .item {
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image img {
+      width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+      width: 100%;
+      text-align: center;
+      margin: 6px 0;
+    }
+    .buttons {
+      margin-right: 20px;
+}
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 20%;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 700px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    display: block;
+    line-height: 1.15;
+    font-weight: 400;
+}
+
+.footer a {
+    color: #999;
+    text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-md-5 {
+	flex: 41.6667%;
+	max-width: 33.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-2 {
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pl-0, .px-0 {
+    padding-left: 0 !important;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+.text-md-right {
+    text-align: right !important;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: none;
+}
+
+button, input {
+    overflow: hidden;
+}
+
+input {
+    margin: 0;
+    font-family: inherit;
+
+
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+textarea {
+    overflow: auto;
+    margin: 0;
+    font-family: inherit;
+}
+#linetag{
+  width: 31%;
+  margin: auto;
+  position: relative;
+  margin-top: 5px;
+}
+#line{
+  width: 95%;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  color: black;
+}
+#heade{
+  position: relative;
+}
+#emaillabel{
+  position: relative;
+  margin: 20px;
+  margin-left: 34%;
+
+}
+#emailinput{
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 35px;
+    border: none;
+  height: 33px;
+  width: 230px;
+}
+#passwordlabel{
+  position: relative;
+  margin: 10px;
+  margin-left: 30%;
+  height: 33px;
+  width: 230px;
+  border-radius: 4px;
+    border: none;
+
+}
+#keep{
+margin-top: 15px;
+size: 1;
+}
+#keepbox{
+  margin-top: 15px;
+  margin-left: 34%;
+}
+#button{
+  margin-left: 34%;
+  height: 33px;
+  width: 230px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+
+}
+
+#einput{
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+    border: none;
+  height: 33px;
+  width: 230px;
+}
+
+#pinput{
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+    border: none;
+  height: 33px;
+  width: 230px;
+}
+
+body{
+  background-color: white;
+}
+
+label{
+  font-size: 25px;
+  font-family: serif;
+  padding: 10px;
+  line-height: 28px;
+
+
+}
+#input{
+  width: inherit;
+    border-radius: 4px;
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+.containerz{
+ width: 700px;
+ height: 500px;
+ background-color: #ccc;
+ margin: auto;
+border-radius: 20px;
+margin: auto;
+margin-bottom: 20px;
+margin-top: 10px;
+
+}
+
+
+.clearfix{
+padding-left: 50%;
+text-align: center;
+height:50px;
+}
+
+.cancelbtn{
+  margin-left: 10px;
+    height: 32px;
+    width: 230px;
+}

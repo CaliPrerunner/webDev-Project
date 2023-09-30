@@ -1,0 +1,48 @@
+.outside {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: arial;
+    line-height: 26px;
+}
+.faq-inside {
+    background-color: #f1f1f1;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+summary {
+    background-color: #555;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    outline: none;
+    margin: 2px 0px;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+details[open] summary ~ * {
+    animation: opening 0.4s ease-in-out;
+}
+@keyframes opening {
+    0% {
+        opacity: 0;
+        margin-top: -10px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 25px;
+}
+details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 25px;
+}

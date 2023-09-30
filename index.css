@@ -1,0 +1,467 @@
+/* Credit w3schools - Team TBD homePage.css */
+html {
+    position: relative;
+    min-height: 100%;
+    line-height: 1.15;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+.index{
+    min-height: 100vh;
+    height: fit-content;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../file_DB/database/background.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+.index a{
+    display: block;
+}
+
+.index .search-wrap{
+    float: left;
+    margin: 0 auto;
+}
+
+.index input[type=text]{
+    border: none;
+    border: 5px solid rgba(0,0,0,0.75);
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 5px #CCC;
+    padding: 10px;
+    margin: 10px;
+    font-size: 19px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit{
+    border-color: 1px white;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5px;
+    min-height: 5vh;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a{
+float: left;
+text-align: center;
+display: block;
+padding: 20px 15px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+list-style: none;
+}
+
+.navbar a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbarright{
+    float: right;
+    overflow: auto;
+}
+
+.navbarright a{
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 20px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    list-style: none;
+}
+
+.navbarright a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.navbarright a:hover::after{
+    width: 100%;
+}
+
+.active{
+    background-color: #ff0000;
+}
+
+.whiteRibbon{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+}
+
+.whiteRibbon:before,
+.whiteRibbon:after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.whiteRibbon:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.whiteRibbon:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    display: flex; /* so child elements can use flexbox stuff too! */
+    background: #ffffff;
+    margin: 20px;
+}
+
+.product-image img {
+    max-width: 100px;
+}
+
+.product-info {
+    margin-top: auto;
+    font: tahoma;
+}
+
+/* zoom in code start*/
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+/* zoom in code end*/
+
+/* shaking image code start*/
+.shake:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* shaking image code end*/
+
+/* slideshow image code start*/
+.slide-container{
+    border: 2px solid black;
+    width:650px;
+    height:340px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.image-container{
+    width:1950px;
+    height:340px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+.slider-image{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.button-container{
+    top: -100px;
+    position: relative;
+}
+.slider-button{
+    margin: 0 2px;
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    background-color: white;
+    float: left;
+    transition: background-color 0.6s ease;
+}
+.slider-button:hover {
+  background-color: #717171;
+}
+#slider-image-1:target ~ .image-container{
+    left:0px;
+    margin-top: 0px;
+}
+#slider-image-2:target ~ .image-container{
+    left:-650px;
+}
+#slider-image-3:target ~ .image-container{
+    left:-1300px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .navbar a{
+        float: none;
+        display: block;
+    }
+}
+/* slideshow image code end*/
+
+body{font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+    background: white;
+    word-wrap: break-word;
+    margin-bottom: 300px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 700px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    display: block;
+}
+
+.footer a {
+    color: #999;
+    text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-md-5 {
+	flex: 41.6667%;
+	max-width: 33.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-2 {
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pl-0, .px-0 {
+    padding-left: 0 !important;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+.text-md-right {
+    text-align: right !important;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: none;
+}
+
+button, input {
+    overflow: visible;
+}
+details[open] summary ~ * {
+    animation: opening 0.4s ease-in-out;
+}
+@keyframes opening {
+    0% {
+        opacity: 0;
+        margin-top: -10px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+textarea {
+    overflow: auto;
+    margin: 0;
+    font-family: inherit;
+}

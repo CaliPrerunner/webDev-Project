@@ -1,0 +1,380 @@
+<!--Site by Team TBD-->
+<!DOCTYPE html>
+<html>
+<!--Head: Sets Favicon and metadata -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TBD Alcohol Delivery</title>
+  <link rel="icon" href="file_DB/database/favicon.ico">
+  <link rel="stylesheet" href="file_DB/css_DB/fontawesome-free-5.15.4-web/css/all.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="file_DB/app.js"></script>
+</head>
+
+<header>
+<!--Website Header: logo is TBD_Logo to homePage, Middle is search bar, Right is LogIn-->
+<section class="index">
+	<div class = "search-wrap" >
+	    <a class="logo" href="index.html"><img src="file_DB/database/tbd_white.png" width=100% height=60 alt="tbd logo"></a>
+	    <input class="form" id="searchbar" type="text" name="search" placeholder="Search for products..." />
+	    <button class="submit" onclick="search_products()"><i class="fas fa-search fa-fw fa-2x"></i></button>
+	</div>
+	<div class="navbarright">
+	    <a href="file_DB/logIn.html"><i class="fas fa-fw fa-user-circle"></i>Sign In / Create Account</a>
+	    <a href="file_DB/paymentPage.html"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a>
+	    <a href="file_DB/settings.html"><i class="fa fa-fw fa-cog"></i></a>
+	</div>
+	<div class="navbar">
+		<!--(Home), Wine, Spirits, Beer, Custom, About, FAQ, Contact-->
+		<a class="active" href="index.html"><i class="fas fa-fw fa-home"></i>Home</a>
+		<a href="file_DB/productPage.html#wine"><i class="fas fa-fw fa-wine-bottle"></i>Wine</a>
+		<a href="file_DB/productPage.html#spirits"><i class="fas fa-fw fa-glass-martini-alt"></i>Spirits</a>
+		<a href="file_DB/productPage.html#beer"><i class="fas fa-fw fa-beer"></i>Beer</a>
+		<a href="file_DB/productPage.html#0"><i class="fas fa-fw fa-ban"></i>Non-Alcoholic</a>
+		<a href="file_DB/aboutUs.html"><i class="fas fa-fw fa-info"></i>About Us</a>
+		<a href="file_DB/faq.html"><i class="fas fa-fw fa-question-circle"></i>FAQ</a>
+		<a href="file_DB/contactUs.html"><i class="fas fa-fw fa-envelope-open-text"></i>Contact Us</a>
+		<!--Right hanging items: Cart with $, Login, Settings-->
+	</div>
+<!--Website Header unofficial end-->
+  <div class="slide-container">
+	  <span id="slider-image-1"></span>
+	  <span id="slider-image-2"></span>
+	  <span id="slider-image-3"></span>
+	<div class="image-container">
+		<img src="file_DB/database/tbd-alcohol.jpg" class="slider-image">
+		<img src="file_DB/database/ads1.jpg" class="slider-image">
+		<img src="file_DB/database/ads3.jpg" class="slider-image">
+	</div>
+	<div class="button-container" style="text-align:center">
+		<a href="#slider-image-1" class="slider-button" id="myAnchor"></a>
+		<a href="#slider-image-2" class="slider-button" id="myAnchor"></a>
+		<a href="#slider-image-3" class="slider-button" id="myAnchor"></a>
+	</div>
+  </div>
+  <!--Product Page Beer Body: begin -->
+  <div>
+  <h2 class="whiteRibbon">Best Selling</h2>
+  <section class="products">
+    <div class="product-card">
+      <div class="product-image">
+        <a href="file_DB/product2.html">
+        <img src="file_DB/database/product2.png" alt="product2" class="shake">
+        </a>
+      </div>
+      <div class="product-info">
+        <h5>Domaine Loubejac Pinot Noir Willamette Valley</h5>
+        <h6>$19.99</h6>
+      </div>
+    </div>  
+    <!-- more products -->
+    <div class="product-card">
+      <div class="product-image">
+        <a href="file_DB/product5.html">
+        <img src="file_DB/database/product5.png" alt="product5" class="shake">
+        </a>
+      </div>
+      <div class="product-info">
+        <h5>El Padrino Blanco Tequila</h5>
+        <h6>$25.99</h6>
+      </div>
+    </div>  
+    <!-- more products -->
+    <div class="product-card">
+      <div class="product-image">
+        <a href="file_DB/product1.html">
+        <img src="file_DB/database/product1.png" alt="product1" class="shake">
+        </a>
+      </div>
+      <div class="product-info">
+        <h5>Carmen Gran Reserva Cabernet Sauvignon</h5>
+        <h6>$17.99</h6>
+      </div>
+    </div>  
+    <!-- more products -->
+    <div class="product-card">
+      <div class="product-image">
+        <a href="file_DB/product4.html">
+        <img src="file_DB/database/product4.png" alt="product4" class="shake">
+        </a>
+      </div>
+      <div class="product-info">
+        <h5>Skatterbrain Dark Chocolate Banana Whiskey</h5>
+        <h6>$18.99</h6>
+      </div>
+    </div>  
+    <!-- more products -->  
+  </section>
+  </div>
+</header>
+
+<!--Body start: beer-->
+<body>
+  <table id="beer" width="100%" >
+    <!--First Row name of section in first cell and View All in second-->
+    <tr>
+      <td align="center" bgcolor="Tomato"><font face="tahoma" size=4 color="white"><strong>New Arrivals</strong></font></td>
+    </tr>
+    <!--Second Row where products go (table), max 4 or 5 with images-->
+    <tr>
+      <table align="center" width="100%" bgcolor=#f5f5dc>
+        <!--Table row for images in products 1 2 3 4 5 etc-->
+        <tr>
+          <td width="33%" align="center">
+            <a href="file_DB/product4.html">
+            <img src="file_DB/database/product4.png" width=100 alt="product4" class="shake">
+          </td>
+          <td width="33%" align="center">
+            <a href="file_DB/product8.html">
+            <img src="file_DB/database/product8.png" width=100 alt="product8" class="shake">
+          </td>
+          <td width="33%" align="center">
+            <a href="file_DB/product9.html">
+            <img src="file_DB/database/product9.png" width=100 alt="product9" class="shake">
+          </td>
+        </tr>
+        <!--Table row for product name and price-->
+        <tr>
+        <td align="center"><a href="file_DB/product4.html"><font color="black"> Skatterbrain Dark Chocolate Banana Whiskey</font></td>
+        <td align="center"><a href="file_DB/product8.html"><font color="black"> Bud Light Seltzer Fall Flannel Pack</font></td>
+        <td align="center"><a href="file_DB/product9.html"><font color="black"> Sapporo</font></td>
+        </tr>
+      <tr>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2">750ml</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2"> 12pk-12oz cans</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2">6pk-12oz btls</font>
+          </td>
+      </tr>
+          <tr>
+          <td align="center">
+          &emsp;
+          <font size="3">$18.99</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font size="3">$14.99</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font size="3">$7.99</font>
+          </td>
+      </tr>
+      </table>
+    </tr>
+  </table>
+  <!--Product Page Beer Body: END -->
+  <!--Product Page Wine Body: begin -->
+
+  <table id="wine" width="100%" align="center" >
+    <!--First Row name of section in first cell and View All in second-->
+    <tr>
+          <td align="center" bgcolor="Tomato"><font face="tahoma" size=4 color="white"><strong>Top Trending</strong></font></td>
+    </tr>
+    <!--Second Row where products go (table), max 4 or 5 with images-->
+    <tr>
+      <table align=center width=100% bgcolor=#f5f5dc>
+        <!--Table row for images in products 1 2 3 4 5 etc-->
+        <tr>
+        <td width="33%" align="center">
+          <a href="file_DB/product1.html">
+          <img src="file_DB/database/product1.png" width=100 alt="product1" class="shake">
+        </td>
+        <td width="33%" align="center">
+          <a href="file_DB/product2.html">
+          <img src="file_DB/database/product2.png" width=100 alt="product2" class="shake">
+        </td>
+        <td width="33%" align="center">
+          <a href="file_DB/product10.html">
+          <img src="file_DB/database/product10.png" width=100 alt="product3" class="shake">
+        </td>
+        </tr>
+        <!--Table row for product name and price-->
+        <tr>
+        <td align=center><a href="file_DB/product1.html"><font color="black">Carmen Gran Reserva Cabernet Sauvignon</font></td>
+        <td align=center><a href="file_DB/product2.html"><font color="black">Domaine Loubejac Pinot Noir Willamette Valley</font></td>
+        <td align=center><a href="file_DB/product10.html"><font color="black">
+  Athletic Non-Alcoholic Upside Dawn</font></td>
+        </tr>
+      <tr>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2">750ml</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2">750ml</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2">6pk-12oz cans</font>
+          </td>
+      </tr>
+          <tr>
+          <td align="center">
+          &emsp;
+          <font size="3">$17.99</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font size="3">$17.99</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font size="3">$9.99</font>
+          </td>
+      </tr>
+      </table>
+    </tr>
+  </table>
+  <table width="100% "border="0"  bgcolor="#f5f5dc">
+      <tr>
+      <td>
+              <hr noshade>
+      </td>
+      </td>
+  </table>
+  <!--Product Page Wine Body: END -->
+  <!--Product Page Spirits Body: begin -->
+
+  <table id="spirits" width="100%" align="center" bgcolor=#f5f5dc>
+    <!--Second Row where products go (table), max 4 or 5 with images-->
+    <tr>
+      <table align=center width=100% bgcolor=#f5f5dc>
+        <!--Table row for images in products 1 2 3 4 5 etc-->
+        <tr>
+        <td width="33%" align="center">
+          <a href="file_DB/product11.html">
+          <img src="file_DB/database/product11.png" width=100 alt="product11" class="shake">
+        </td>
+        <td width="33%" align="center">
+          <a href="file_DB/product5.html">
+          <img src="file_DB/database/product5.png" width=100 alt="product5" class="shake">
+        </td>
+        <td width="33%" align="center">
+          <a href="file_DB/product12.html">
+          <img src="file_DB/database/product12.png" width=100 alt="product12" class="shake">
+        </td>
+        </tr>
+        <!--Table row for product name and price-->
+        <td align="center"><a href="file_DB/product11.html"><font color="black">Heineken 0.0</font></td>
+        <td align=center><a href="file_DB/product5.html"><font color="black">El Padrino Blanco Tequila</font></td>
+        <td align=center><a href="file_DB/product12.html"><font color="black">Clausthaler Dry Hopped Non-Alcoholic Beer</font></td>
+      </tr>
+          <tr>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2">6pk-11oz btls</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2">750ml</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font color="#686868" size="2">6pk-12oz btls</font>
+          </td>
+      </tr>
+          <tr>
+          <td align="center">
+          &emsp;
+          <font size="3">$7.99</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font size="3">$25.99</font>
+          </td>
+          <td align="center">
+          &emsp;
+          <font size="3">$6.99</font>
+          </td>
+      </tr>
+      </table>
+    </tr>
+  </table>
+  <table width="100% "border="0"  bgcolor="#f5f5dc">
+      <tr>
+      <td>
+              <hr noshade>
+      </td>
+      </td>
+  </table>
+  <table id="0" width="100%" align="center" bgcolor=#f5f5dc>
+    <!--First Row name of section in first cell and View All in second-->
+    <tr>
+      <td align=right><a href="index.html">Return to Top</a><br>&emsp;</td>
+    </tr>
+  </table>
+
+  <!--Product Page Spirits Body: END -->
+      </section>
+</body>
+
+<!-- Website Footer start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!--First upper Row of footer-->
+      <div class="col-md-5">
+        <h5><i class="fas fa-beer fa-lg"></i> TBD Wholesale</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="productPage.html">Products</a></li>
+                <li><a href="paymentPage.html">Cart</a></li>
+                <li><a href="faq.html">F.A.Q</a></li>
+                <li><a href="settings.html">Settings</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="logIn.html">Log In</a></li>
+                <li><a href="createAccount.html">Register</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="nav">
+                  <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                  <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a></li>
+                  <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-github fa-lg"></i></a></li>
+                  <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-instagram fa-lg"></i></a></li>
+              </ul>
+              <br>
+            </div>
+      <!--Center upper row of footer-->
+      <div class="col-md-2">
+        <h5 class="text-md-right">Contact Us</h5>
+        <hr>
+        <h5>Email:  tbd@sfsu.edu</h5>
+        <h5>Phone: +1415TBD8000</h5>
+      </div>
+      <!--Right footer form-->
+      <div class="col-md-5">
+        <form>
+          <fieldset class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </fieldset>
+          <fieldset class="form-group">
+            <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+          </fieldset>
+          <fieldset class="form-group text-xs-right">
+            <button type="button" class="btn btn-secondary-outline btn-lg" onclick="contactUs()">Send</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+</html>

@@ -1,0 +1,395 @@
+/* Credit w3schools - Team TBD homePage.css */
+html {
+    position: relative;
+    min-height: 100%;
+    line-height: 1.15;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+.index{
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../database/background.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+.index a{
+    display: block;
+}
+
+.index .search-wrap{
+    float: left;
+    margin: 0 auto;
+}
+
+.index input[type=text]{
+    border: none;
+    border: 5px solid rgba(0,0,0,0.75);
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 5px #CCC;
+
+    padding: 8px;
+    margin-top: 5%;
+    font-size: 19px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit{
+    border-radius: 50%;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+}
+
+.navbarright{
+    float: right;
+    overflow: auto;
+}
+
+.navbarright a{
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 20px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    list-style: none;
+}
+.navbarright a:hover{
+    background-color: #000;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a{
+float: left;
+text-align: center;
+display: block;
+padding: 20px 15px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+list-style: none;
+}
+
+.navbar a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.active{
+    background-color: #ff0000;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a{
+        float: none;
+        display: block;
+    }
+}
+/* slideshow image code end*/
+
+body{font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+    background: white;
+    word-wrap: break-word;
+    margin-bottom: 300px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 700px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    display: block;
+}
+
+.footer a {
+    color: #999;
+    text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-md-5 {
+	flex: 41.6667%;
+	max-width: 33.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-2 {
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pl-0, .px-0 {
+    padding-left: 0 !important;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+.text-md-right {
+    text-align: right !important;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: none;
+}
+
+button, input {
+    overflow: visible;
+}
+
+input {
+    margin: 0;
+    font-family: inherit;
+}
+
+textarea.form-control {
+    height: auto;
+}
+.para {
+text-align: left;
+padding-left: 2px;
+}
+
+.fix{
+  text-align: left;
+
+}
+
+textarea {
+    overflow: wrap;
+    margin: 0;
+    font-family: inherit;
+}
+
+/*
+about us profiles
+-------------------------------------------------- */
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 53%;
+  margin-bottom: 8px;
+  padding:  4px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 4px;
+  background-color: white;
+
+}
+
+.about-section {
+  padding: 40px;
+  text-align:  center;
+  background-color: #eaeaea;
+  color: black;
+}
+
+.container {
+  padding: 9px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+
+}
+
+/* google map
+-------------------------------------------------- */
+
+
+
+
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:70%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:80%;
+
+    width:80%;
+
+    position:absolute;
+
+}
+
+
+
+
+
+
+html {
+  box-sizing: border-box;
+}

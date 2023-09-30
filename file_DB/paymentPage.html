@@ -1,0 +1,207 @@
+<!--Site by Team TBD-->
+<!DOCTYPE html>
+<html>
+<!--Head: Sets Favicon and metadata -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TBD Alcohol Delivery</title>
+  <link rel="icon" href="database/favicon.ico">
+  <link rel="stylesheet" href="css_DB/fontawesome-free-5.15.4-web/css/all.css">
+  <link rel="stylesheet" href="css_DB/template.css">
+  <script src="app.js"></script>
+</head>
+
+<header>
+<!--Website Header: logo is TBD_Logo to homePage, Middle is search bar, Right is LogIn-->
+  <section class="index">
+	<div class = "search-wrap" >
+	    <a class="logo" href="../index.html"><img src="database/tbd_white.png" width=100% height=60 alt="tbd logo"></a>
+	    <input class="form" type="text" placeholder="Search for products..." />
+	    <button class="submit"><i class="fas fa-search fa-fw fa-2x"></i></button>
+	</div>
+	<div class="navbarright">
+	    <a href="logIn.html"><i class="fas fa-fw fa-user-circle"></i>Sign In / Create Account</a>
+	    <a href="paymentPage.html"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a>
+	    <a href="settings.html"><i class="fa fa-fw fa-cog"></i></a>
+	</div>
+	<div class="navbar">
+		<!--(Home), Wine, Spirits, Beer, Custom, About, FAQ, Contact-->
+		<a class="active" href="../index.html"><i class="fas fa-fw fa-home"></i>Home</a>
+		<a href="productPage.html#wine"><i class="fas fa-fw fa-wine-bottle"></i>Wine</a>
+		<a href="productPage.html#spirits"><i class="fas fa-fw fa-glass-martini-alt"></i>Spirits</a>
+		<a href="productPage.html#beer"><i class="fas fa-fw fa-beer"></i>Beer</a>
+		<a href="productPage.html#0"><i class="fas fa-fw fa-ban"></i>Non-Alcoholic</a>
+		<a href="aboutUs.html"><i class="fas fa-fw fa-info"></i>About Us</a>
+		<a href="faq.html"><i class="fas fa-fw fa-question-circle"></i>FAQ</a>
+		<a href="contactUs.html"><i class="fas fa-fw fa-envelope-open-text"></i>Contact Us</a>
+		<!--Right hanging items: Cart with $, Login, Settings-->
+	</div>
+  </section>
+</header>
+<!--Website Header end-->
+<!--checkout start-->
+<body>
+<div class="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    Shopping Cart
+  </div>
+ 
+  <!-- Product #1 -->
+  <div class="item" id="itemElement">
+    <div class="buttons">
+      <span class="delete-btn" onclick="remove()"><i class="fas fa-times"></i></span>
+      <span class="like-btn"><i class="fas fa-heart"></i></span>
+    </div>
+ 
+    <div class="image">
+      <img src="database/product1.png" width="60" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Carmen Gran Res.</span>
+      <span>Red Wine</span>
+      <span>13.5%</span>
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <i class="fas fa-plus" onclick="incrementItem()"></i>
+      </button>
+      <input type="text" id="productCount" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <i class="fas fa-minus" onclick="augmentItem()"></i>
+      </button>
+    </div>
+    <div class="total-price" id="total-price">17.99</div>
+  </div>
+ 
+  <!-- Product #2 -->
+  <div class="item" id="itemElement">
+    <div class="buttons">
+      <span class="delete-btn" onclick="remove()"><i class="fas fa-times"></i></span>
+      <span class="like-btn"><i class="fas fa-heart"></i></span>
+    </div>
+ 
+    <div class="image">
+      <img src="database/product2.png" width="50" alt=""/>
+    </div>
+ 
+    <div class="description">
+      <span>Domaine Loubejac</span>
+      <span>Red Wine</span>
+      <span>13.8%</span>
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <i class="fas fa-plus" onclick="incrementItem()"></i>
+      </button>
+      <input type="text" id="productCount" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <i class="fas fa-minus" onclick="augmentItem()"></i>
+      </button>
+    </div>
+ 
+    <div class="total-price" id="total-price">17.99</div>
+  </div>
+ 
+  <!-- Product #3 -->
+  <div class="item" id="itemElement">
+    <div class="buttons">
+      <span class="delete-btn"><i class="fas fa-times" onclick="remove()"></i></span>
+      <span class="like-btn"><i class="fas fa-heart"></i></span>
+    </div>
+ 
+    <div class="image">
+      <img src="database/product3.png" width="50" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Uro Toro La Enfer.</span>
+      <span>Red Wine</span>
+      <span>14.5%</span>
+    </div>
+ 
+    <div class="quantity">
+      <button class="plus-btn" type="button" name="button">
+        <i class="fas fa-plus" onclick="incrementItem()"></i>
+      </button>
+      <input type="text" id="productCount" value="1">
+      <button class="minus-btn" type="button" name="button">
+        <i class="fas fa-minus"></i>
+      </button>
+    </div>
+ 
+    <div class="total-price" id="total-price">8.99</div>
+  </div>
+
+  <div class="item">
+    <div class="beforeTax">
+      Before Tax:
+    </div>
+    <div class="endPrice">
+      Total Price:
+    </div>
+  </div>
+  
+</div>
+</body>
+<!-- Website Footer start -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5">
+              <h5><i class="fas fa-beer fa-lg"></i> TBD Wholesale</h5>
+              <div class="row">
+                  <div class="col-6">
+                      <ul class="list-unstyled">
+                          <li><a href="productPage.html">Products</a></li>
+                          <li><a href="paymentPage.html">Cart</a></li>
+                          <li><a href="faq.html">F.A.Q</a></li>
+                          <li><a href="settings.html">Settings</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-6">
+                      <ul class="list-unstyled">
+                          <li><a href="logIn.html">Log In</a></li>
+                          <li><a href="createAccount.html">Register</a></li>
+                          <li><a href="aboutUs.html">About Us</a></li>
+                          <li><a href="contactUs.html">Contact Us</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <ul class="nav">
+                  <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                  <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a></li>
+                  <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-github fa-lg"></i></a></li>
+                  <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-instagram fa-lg"></i></a></li>
+              </ul>
+              <br>
+          </div>
+          <div class="col-md-2">
+              <h5 class="text-md-right">Contact Us</h5>
+              <hr>
+              <h5>Email:  tbd@sfsu.edu</h5>
+              <h5>Phone: +1415TBD8000</h5>
+          </div>
+          <div class="col-md-5">
+              <form>
+                  <fieldset class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  </fieldset>
+                  <fieldset class="form-group">
+                      <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                  </fieldset>
+                  <fieldset class="form-group text-xs-right">
+                      <button type="button" class="btn btn-secondary-outline btn-lg" onclick="contactUs()">Send</button>
+                  </fieldset>
+              </form>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- End Footer -->
+</html>

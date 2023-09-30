@@ -1,0 +1,432 @@
+/* Credit w3schools - Team TBD homePage.css */
+html {
+    position: relative;
+    min-height: 100%;
+    line-height: 1.15;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+.index{
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../database/background.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+.index a{
+    display: block;
+}
+
+.index .search-wrap{
+    float: left;
+    margin: 0 auto;
+}
+
+.index input[type=text]{
+    border: none;
+    border: 5px solid rgba(0,0,0,0.75);
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 5px #CCC;
+
+    padding: 8px;
+    margin-top: 5%;
+    font-size: 19px;
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit{
+    border-radius: 50%;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+}
+
+.navbarright{
+    float: right;
+    overflow: auto;
+}
+
+.navbarright a{
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 20px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    list-style: none;
+}
+.navbarright a:hover{
+    background-color: #000;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a{
+float: left;
+text-align: center;
+display: block;
+padding: 20px 15px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+list-style: none;
+}
+
+.navbar a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.active{
+    background-color: #ff0000;
+}
+
+
+@media screen and (max-width: 500px) {
+    .navbar a{
+        float: none;
+        display: block;
+    }
+}
+/* slideshow image code end*/
+
+body{font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+    background: white;
+    word-wrap: break-word;
+    margin-bottom: 300px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 10px;
+    top: 1000px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 15%;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 700px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    display: block;
+}
+
+.footer a {
+    color: #999;
+    text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-md-5 {
+	flex: 41.6667%;
+	max-width: 33.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-2 {
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pl-0, .px-0 {
+    padding-left: 0 !important;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+.text-md-right {
+    text-align: right !important;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: none;
+}
+
+button, input {
+    overflow: visible;
+}
+
+input {
+    margin: 0;
+    font-family: inherit;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+textarea {
+    overflow: auto;
+    margin: 0;
+    font-family: inherit;
+}
+
+#line{
+  width: 95%;
+  margin: auto;
+  position: relative;
+  top: 20px;
+}
+#heade{
+  position: relative;
+  left: 80px;
+  top: 20px;
+}
+
+
+/*
+CSS for the form section on the left
+*/
+#boxlabel{
+bottom: 10px
+color: red;
+
+}
+p{
+  color: #707070;
+}
+.grid-left{
+position: relative;
+left: 70px;
+background-color: #ccc;
+box-shadow: red;
+height: 900;
+width: 70%;
+}
+
+label{
+  padding: 10px;
+
+}
+/*css to lign up the individual box's*/
+#lname{
+  position: relative;
+  left: 31;
+}
+#fname{
+  position: relative;
+  left: 30;
+}
+#num{
+  position: relative;
+  left: 49;
+}
+#email{
+  position: relative;
+  left: 64;
+}
+#box{
+  position: relative;
+}
+
+input[type=text], select, textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 7px solid #ccc; /* Gray border */
+  border-radius: 16px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 9px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  margin-left: 30px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=number], select, textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 7px solid #ccc; /* Gray border */
+  border-radius: 16px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 9px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  margin-left: 30px;
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/*will split the two box's in the with the flex
+*/
+
+.grid-container{
+  grid-template-columns: 1fr 1fr;
+grid-gap: 1px;
+    display: grid;
+
+}
+
+
+/*
+CSS for the address and phone number, right box
+*/
+
+.rightBox{
+  border: 5px black;
+  box-shadow: 5px 10px;
+
+}

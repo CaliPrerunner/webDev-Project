@@ -1,0 +1,27 @@
+{
+  "name": "csc317-group-html-storefront-caliprerunner",
+  "version": "1.0.0",
+  "description": "Group Site Packages",
+  "main": "db_connection.js",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSC317-Fall-2021/csc317-group-html-storefront-CaliPrerunner.git"
+  },
+  "author": "team tbd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSC317-Fall-2021/csc317-group-html-storefront-CaliPrerunner/issues"
+  },
+  "homepage": "https://github.com/CSC317-Fall-2021/csc317-group-html-storefront-CaliPrerunner#readme",
+  "keywords": [
+    "webdev",
+    "server"
+  ]
+}

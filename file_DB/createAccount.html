@@ -1,0 +1,122 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TBD Alcohol Delivery</title>
+    <link rel="icon" href="database/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css_DB/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="css_DB/logIn.css">
+    <script src="app.js"></script>
+</head>
+<style>
+    
+</style>
+<!--Website Header-->
+<header id="onDefault">
+    <section class="index">
+		<div class = "search-wrap" >
+			<a class="logo" href="../index.html"><img src="database/tbd_white.png" width=100% height=60 alt="tbd logo"></a>
+			<input class="form" type="text" placeholder="Search for products..." />
+			<button class="submit"><i class="fas fa-search fa-fw fa-2x"></i></button>
+		</div>
+		<div class="navbarright">
+			<a href="logIn.html"><i class="fas fa-fw fa-user-circle"></i>Sign In / Create Account</a>
+			<a href="paymentPage.html"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a>
+			<a href="settings.html"><i class="fa fa-fw fa-cog"></i></a>
+		</div>
+		<div class="navbar">
+			<!--(Home), Wine, Spirits, Beer, Custom, About, FAQ, Contact-->
+			<a class="active" href="../index.html"><i class="fas fa-fw fa-home"></i>Home</a>
+			<a href="productPage.html#wine"><i class="fas fa-fw fa-wine-bottle"></i>Wine</a>
+			<a href="productPage.html#spirits"><i class="fas fa-fw fa-glass-martini-alt"></i>Spirits</a>
+			<a href="productPage.html#beer"><i class="fas fa-fw fa-beer"></i>Beer</a>
+			<a href="productPage.html#0"><i class="fas fa-fw fa-ban"></i>Non-Alcoholic</a>
+			<a href="aboutUs.html"><i class="fas fa-fw fa-info"></i>About Us</a>
+			<a href="faq.html"><i class="fas fa-fw fa-question-circle"></i>FAQ</a>
+			<a href="contactUs.html"><i class="fas fa-fw fa-envelope-open-text"></i>Contact Us</a>
+			<!--Right hanging items: Cart with $, Login, Settings-->
+		</div>
+</header>
+
+<body>
+        <div class="containerz">
+          <form action="/action_page.php" style="border:1px solid #ccc">
+          <h1><center>Sign Up<center></h1>
+          <p><center>Please fill in this form to create an account<center></p>
+
+          <label for="email"><center>Email<center></label>
+          <input id="einput" type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><center>Password<center></label>
+          <input id="pinput" type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="psw-repeat"><center>Repeat Password<center></label>
+          <input id="pinput" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+<br>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+              <label for="remember"> Remember Me</label>
+<br>
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue" onclick="termsandConditions()">Terms & Privacy</a>.</p>
+
+          <div class="butt">
+            <button type="button" class="cancelbtn">Sign Up</button>
+          </div>
+            </form>
+        </div>
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h5><i class="fas fa-beer fa-lg"></i> TBD Wholesale </h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Benefits</a></li>
+                            <li><a href="">Partners</a></li>
+                            <li><a href="">Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li><a href="">Documentation</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Legal Terms</a></li>
+                            <li><a href="">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-github fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-instagram fa-lg"></i></a></li>
+                </ul>
+                <br>
+            </div>
+            <div class="col-md-2">
+                <h5 class="text-md-right">Contact Us</h5>
+                <hr>
+                <p>Phone: (888) 888-888</p>
+                <p>Email: sfsuTBD@sfsu.edu</p>
+            </div>
+            <div class="col-md-5">
+                <form>
+                    <fieldset class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                    </fieldset>
+                    <fieldset class="form-group text-xs-right">
+                        <button type="button" class="btn btn-secondary-outline btn-lg"id="">Send</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
